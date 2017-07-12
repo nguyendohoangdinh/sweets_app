@@ -79,6 +79,7 @@ section{
 		background-color: #e0f2b6;
 		border:2px solid #b4d46e;
 		color: #899f5c;	
+		border-radius: 5px;
 		}
 		button{
 			width: 280px;
@@ -92,27 +93,39 @@ section{
 		};
 	};
 	.epark-form-content{
-		tr th:first-child{
+
+		.epark-btn-a  tr{
 			background-color:#f3efe9;
 			width: 230px;
-			height: 60px;
 			padding-left: 10px;
+		}
+		input{
+			border-radius: 5px;
+			border:1px solid #c2ada3;
 		}
 		tr td:first-child{
 			background-color:#f3efe9;
 			width: 230px;
 			padding: 10px;
 		}
-		tr th:nth-child(2){
-			padding-left: 30px;
-		}
 	}
 	.epark-content{
-		input[type="text"]{
+		input[type="text"],input[type="checkbox"],p{
 			margin-left: 30px;
 		}
 		input[type="radio"]{
 			margin-left: 30px;
+		}
+		label, select{
+			margin-left: 30px;
+		}
+		select{
+			height: 35px;
+			width: 530px;
+			border-radius: 5px;
+			border:2px solid #e4dbce;
+			background-color: white;
+
 		}
 		h1{
 			height: 45px;
@@ -125,6 +138,18 @@ section{
 		tr{
 			border-bottom: 2px dotted #999999;
 		}
+		.epark-btn-b input[type="text"]{
+			height: 35px;
+			width: 530px;
+			padding-left: 10px;
+		}
+		.epark-btn-c input[type="text"]{
+			width: 200px;
+			height: 35px;
+			margin-bottom: 15px;
+			margin-top: 12px;
+			padding-left: 10px;
+		}
 		.epark-btn-a,.epark-btn-e ,.epark-btn-d,.epark-btn-f,.epark-btn-g,.epark-btn-p, .epark-btn-h,.epark-btn-j,.epark-btn-k{
 			height: 60px;
 		}
@@ -136,6 +161,60 @@ section{
 		}
 		.epark-btn-h{
 			height: 80px;
+		}
+		.epark-btn-s  input{
+			padding-left: 10px;
+			width: 530px;
+			height: 35px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		.epark-btn-h input{
+			padding-left: 10px;
+			width: 530px;
+			height: 35px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		.epark-btn-j input{
+			padding-left: 10px;
+			width: 530px;
+			height: 35px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		.epark-btn-k input{
+			padding-left: 10px;
+			width: 530px;
+			height: 35px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		span{
+			margin-left: 30px;
+		}
+		};
+		.epark-btn-g{ 
+		input{
+			width: 90px;
+			height: 35px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-right: 10px;	
+		}
+		button{
+			height: 35px;
+			width: 120px;
+			border-radius: 5px;
+			margin-left: 40px;
+		}
+		.btn-r{
+			margin-left: 10px;
+		}
+		};
+		.btn-search-address{
+			border:2px solid #dfd2c3;
+			background-color: #f3efe9;
+			color: #846445;
 		}
 	}
 	.alert-bottom{

@@ -67,7 +67,8 @@ section .spark-btn-update {
   section .spark-btn-update button:hover {
     background-color: #e0f2b6;
     border: 2px solid #b4d46e;
-    color: #899f5c; }
+    color: #899f5c;
+    border-radius: 5px; }
   section .spark-btn-update button {
     width: 280px;
     height: 50px;
@@ -77,21 +78,29 @@ section .spark-btn-update {
     background-color: #f3efe9;
     border: 2px solid #e4dbce;
     margin-right: 20px; }
-section .epark-form-content tr th:first-child {
+section .epark-form-content .epark-btn-a tr {
   background-color: #f3efe9;
   width: 230px;
-  height: 60px;
   padding-left: 10px; }
+section .epark-form-content input {
+  border-radius: 5px;
+  border: 1px solid #c2ada3; }
 section .epark-form-content tr td:first-child {
   background-color: #f3efe9;
   width: 230px;
   padding: 10px; }
-section .epark-form-content tr th:nth-child(2) {
-  padding-left: 30px; }
-section .epark-content input[type="text"] {
+section .epark-content input[type="text"], section .epark-content input[type="checkbox"], section .epark-content p {
   margin-left: 30px; }
 section .epark-content input[type="radio"] {
   margin-left: 30px; }
+section .epark-content label, section .epark-content select {
+  margin-left: 30px; }
+section .epark-content select {
+  height: 35px;
+  width: 530px;
+  border-radius: 5px;
+  border: 2px solid #e4dbce;
+  background-color: white; }
 section .epark-content h1 {
   height: 45px;
   border-bottom: 2px dotted #999999; }
@@ -100,6 +109,16 @@ section .epark-content h3 {
   border-bottom: 2px dotted #999999; }
 section .epark-content tr {
   border-bottom: 2px dotted #999999; }
+section .epark-content .epark-btn-b input[type="text"] {
+  height: 35px;
+  width: 530px;
+  padding-left: 10px; }
+section .epark-content .epark-btn-c input[type="text"] {
+  width: 200px;
+  height: 35px;
+  margin-bottom: 15px;
+  margin-top: 12px;
+  padding-left: 10px; }
 section .epark-content .epark-btn-a, section .epark-content .epark-btn-e, section .epark-content .epark-btn-d, section .epark-content .epark-btn-f, section .epark-content .epark-btn-g, section .epark-content .epark-btn-p, section .epark-content .epark-btn-h, section .epark-content .epark-btn-j, section .epark-content .epark-btn-k {
   height: 60px; }
 section .epark-content .epark-btn-b {
@@ -108,6 +127,49 @@ section .epark-content .epark-btn-c, section .epark-content .epark-btn-l {
   height: 155px; }
 section .epark-content .epark-btn-h {
   height: 80px; }
+section .epark-content .epark-btn-s input {
+  padding-left: 10px;
+  width: 530px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+section .epark-content .epark-btn-h input {
+  padding-left: 10px;
+  width: 530px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+section .epark-content .epark-btn-j input {
+  padding-left: 10px;
+  width: 530px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+section .epark-content .epark-btn-k input {
+  padding-left: 10px;
+  width: 530px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  section .epark-content .epark-btn-k input span {
+    margin-left: 30px; }
+section .epark-content .epark-btn-g input {
+  width: 90px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 10px; }
+section .epark-content .epark-btn-g button {
+  height: 35px;
+  width: 120px;
+  border-radius: 5px;
+  margin-left: 40px; }
+section .epark-content .epark-btn-g .btn-r {
+  margin-left: 10px; }
+section .epark-content .btn-search-address {
+  border: 2px solid #dfd2c3;
+  background-color: #f3efe9;
+  color: #846445; }
 section .alert-bottom {
   background-color: #ffe9ea;
   height: 30px;

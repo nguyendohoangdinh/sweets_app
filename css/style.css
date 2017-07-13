@@ -2,198 +2,440 @@
 * {
   box-sizing: border-box; }
 
+.border-border, .epark-search-top input {
+  border: 1px solid #c2ada3; }
+
 .h-top-block {
   background-color: #c7000b;
   height: 10px; }
 
-header {
+.pc-container {
   width: 1200px;
+  margin: 0 auto; }
+
+.container {
+  width: 981px; }
+
+body {
+  font: HiraKakuProN;
+  background-color: #ffffff; }
+
+header {
+  width: 981px;
   height: 80px;
   margin: 0 auto 20px;
   border-bottom: 1px solid #ddcfc8;
   background: url(../img/줤젱.png) center no-repeat #f9fcff;
-  /*li{
-  	float: right;
-  	margin-top: 15px;
-  }*/ }
-  header .logo {
-    position: absolute;
-    margin: 20px auto 20px 20px; }
-  header .title {
-    display: block;
+  background-position: 100px 0; }
+  header img {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px; }
+  header p {
     float: right;
+    font-size: 14px;
     margin-right: 20px;
-    margin-top: 20px; }
+    margin-top: 15px; }
   header input {
-    height: 30px;
+    height: 35px;
     width: 400px;
     border-radius: 5px;
     border: 1px solid #c0aca2; }
+  header .right-header {
+    width: 680px;
+    height: 34px;
+    margin-top: -26px;
+    float: right; }
+    header .right-header ul {
+      margin-top: -18px; }
   header .btn-search {
-    height: 30px;
+    display: inline-block;
     width: 50px;
-    border-radius: 5px;
-    background-color: #c7000b;
-    border-color: #c7000b; }
-  header .btn-login, header .btn-plug {
-    height: 30px;
-    width: 95px;
-    border-radius: 5px;
-    border-color: #8ec21f;
-    background-color: #8ec21f; }
-  header .btn-login, header .btn-plug span {
-    color: white; }
-  header .epark-right-menu {
-    width: 300px;
+    height: 35px;
+    padding: 11px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    border: none;
+    background: #cb141a url("../img/search.png") center no-repeat; }
+  header button {
+    margin-right: -10px; }
+  header ul {
+    list-style-type: none;
     float: right;
-    list-style-type: none; }
-  header .epark-search-top {
-    float: right;
-    margin-top: 40px; }
-    header .epark-search-top li {
-      float: right; }
-  header ul li {
-    height: 30px;
-    width: 95px;
-    border-radius: 5px;
-    background-color: #8ec21f;
-    text-align: center;
-    color: white; }
+    margin-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 0; }
+    header ul li {
+      display: inline-block;
+      width: 95px;
+      height: 35px;
+      line-height: 35px;
+      background-color: #8ec21f;
+      text-align: right;
+      padding-right: 5px;
+      margin-right: 10px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; }
+      header ul li:last-child {
+        margin-right: 0; }
+      header ul li span {
+        display: inline-block;
+        position: relative;
+        color: #fff; }
+        header ul li span.login:before {
+          content: url("../img/줤젲.png");
+          position: absolute;
+          left: -26px;
+          line-height: 40px; }
+        header ul li span.plug:before {
+          content: "\f067";
+          font-family: FontAwesome;
+          display: inline-block;
+          text-align: center;
+          line-height: 17px;
+          position: absolute;
+          left: -26px;
+          top: 6px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          border-radius: 50%;
+          border: 2px solid #fff;
+          width: 20px;
+          height: 20px; }
 
-section .spark-btn-update {
-  margin-top: 35px;
-  margin-bottom: 60px;
-  text-align: center; }
-  section .spark-btn-update button:hover {
-    background-color: #e0f2b6;
-    border: 2px solid #b4d46e;
-    color: #899f5c;
+.epark-search-top {
+  margin: -18px;
+  width: 456px;
+  float: left;
+  /*margin-top: 34px;*/ }
+  .epark-search-top input {
+    width: 400px;
+    height: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
     border-radius: 5px; }
-  section .spark-btn-update button {
-    width: 280px;
-    height: 50px;
-    font-weight: bold;
-    color: #936945;
-    border-radius: 5px;
-    background-color: #f3efe9;
-    border: 2px solid #e4dbce;
-    margin-right: 20px; }
-section .epark-form-content .epark-btn-a tr {
-  background-color: #f3efe9;
-  width: 230px;
-  padding-left: 10px; }
-section .epark-form-content input {
-  border-radius: 5px;
-  border: 1px solid #c2ada3; }
-section .epark-form-content tr td:first-child {
-  background-color: #f3efe9;
-  width: 230px;
-  padding: 10px; }
-section .epark-content input[type="text"], section .epark-content input[type="checkbox"], section .epark-content p {
-  margin-left: 30px; }
-section .epark-content input[type="radio"] {
-  margin-left: 30px; }
-section .epark-content label, section .epark-content select {
-  margin-left: 30px; }
-section .epark-content select {
-  height: 35px;
-  width: 530px;
-  border-radius: 5px;
-  border: 2px solid #e4dbce;
-  background-color: white; }
-section .epark-content h1 {
-  height: 45px;
-  border-bottom: 2px dotted #999999; }
-section .epark-content h3 {
-  height: 50px;
-  border-bottom: 2px dotted #999999; }
-section .epark-content tr {
-  border-bottom: 2px dotted #999999; }
-section .epark-content .epark-btn-b input[type="text"] {
-  height: 35px;
-  width: 530px;
-  padding-left: 10px; }
-section .epark-content .epark-btn-c input[type="text"] {
-  width: 200px;
-  height: 35px;
-  margin-bottom: 15px;
-  margin-top: 12px;
-  padding-left: 10px; }
-section .epark-content .epark-btn-a, section .epark-content .epark-btn-e, section .epark-content .epark-btn-d, section .epark-content .epark-btn-f, section .epark-content .epark-btn-g, section .epark-content .epark-btn-p, section .epark-content .epark-btn-h, section .epark-content .epark-btn-j, section .epark-content .epark-btn-k {
-  height: 60px; }
-section .epark-content .epark-btn-b {
-  height: 135px; }
-section .epark-content .epark-btn-c, section .epark-content .epark-btn-l {
-  height: 155px; }
-section .epark-content .epark-btn-h {
-  height: 80px; }
-section .epark-content .epark-btn-s input {
-  padding-left: 10px;
-  width: 530px;
-  height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
-section .epark-content .epark-btn-h input {
-  padding-left: 10px;
-  width: 530px;
-  height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
-section .epark-content .epark-btn-j input {
-  padding-left: 10px;
-  width: 530px;
-  height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
-section .epark-content .epark-btn-k input {
-  padding-left: 10px;
-  width: 530px;
-  height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
-  section .epark-content .epark-btn-k input span {
-    margin-left: 30px; }
-section .epark-content .epark-btn-g input {
-  width: 90px;
-  height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-right: 10px; }
-section .epark-content .epark-btn-g button {
-  height: 35px;
-  width: 120px;
-  border-radius: 5px;
-  margin-left: 40px; }
-section .epark-content .epark-btn-g .btn-r {
-  margin-left: 10px; }
-section .epark-content .btn-search-address {
-  border: 2px solid #dfd2c3;
-  background-color: #f3efe9;
-  color: #846445; }
-section .alert-bottom {
+    .epark-search-top input[placeholder] {
+      padding-left: 5px;
+      color: #a0a0a0;
+      font-size: 15px;
+      padding-left: 10px; }
+
+section {
+  padding-top: 14px; }
+  section .border-bottom-dotted td input {
+    margin-top: 15px; }
+  section ul {
+    list-style: none;
+    padding-left: 0px; }
+    section ul li {
+      display: inline-block; }
+      section ul li a {
+        display: inline-block;
+        color: #b29783; }
+      section ul li a:hover {
+        text-decoration: none;
+        color: #e58e4d; }
+      section ul li:after {
+        content: ">";
+        color: #6b6b6b; }
+      section ul li:last-child a {
+        color: #6b6b6b; }
+      section ul li:last-child:after {
+        content: ''; }
+  section .input-group-addon {
+    background: url(../img/calendar.png) center no-repeat;
+    position: relative;
+    height: 35px;
+    width: 50px; }
+  section #botton-1 input, section #botton-2 input, section #botton-3 input, section #botton-4 input {
+    margin-left: 30px;
+    padding-left: 10px;
+    height: 35px;
+    width: 530px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  section #botton-4 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 30px; }
+    section #botton-4 span {
+      margin-left: 30px; }
+  section .l-border {
+    margin-left: 5px;
+    float: left;
+    margin-right: 90px; }
+  section select {
+    background-image: url(../img/search-add.png) !important center no-repeat; }
+  section .epark-content {
+    border-top: 2px solid #444444; }
+    section .epark-content .border-bottom-dotted {
+      border-bottom: 1px dotted #999999; }
+    section .epark-content table.epark-table {
+      width: 940px; }
+    section .epark-content .spark-input {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 0; }
+      section .epark-content .spark-input span:first-child {
+        color: red;
+        padding-left: 16px; }
+      section .epark-content .spark-input span:last-child {
+        color: #747474;
+        font-size: 11px; }
+    section .epark-content tr {
+      color: #444; }
+      section .epark-content tr th:first-child {
+        width: 230px;
+        background-color: #f3efe9;
+        padding: 24px 0 24px 12px; }
+      section .epark-content tr th:last-child {
+        padding: 24px 0 24px 30px; }
+      section .epark-content tr td:first-child {
+        width: 230px;
+        background-color: #f3efe9;
+        padding-left: 12px; }
+      section .epark-content tr td input[type="radio"] {
+        display: none; }
+      section .epark-content tr td input {
+        margin: 0; }
+        section .epark-content tr td input[type="checkbox"] {
+          display: none; }
+        section .epark-content tr td input[type="text"] {
+          border: 1px solid #c2ada3;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          -ms-border-radius: 3px;
+          border-radius: 3px;
+          height: 35px; }
+      section .epark-content tr td label {
+        color: #444;
+        font-weight: normal;
+        position: relative;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+        section .epark-content tr td label[for="member-1"] {
+          padding-left: 58px;
+          padding-top: 24px; }
+        section .epark-content tr td label[for="member-2"] {
+          padding-left: 58px;
+          padding-top: 14px;
+          margin-top: 0px; }
+        section .epark-content tr td label.radio-green:before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          width: 18px;
+          height: 19px;
+          background-color: #d9d9d9;
+          border-radius: 50%;
+          margin-left: -28px; }
+        section .epark-content tr td label.checkbox-green:before {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border-radius: 3px;
+          left: -35px;
+          background-color: #d9d9d9; }
+      section .epark-content tr td input[type="checkbox"]:checked + label.checkbox-green:before {
+        content: "\f00c";
+        font-family: FontAwesome;
+        color: #fff;
+        line-height: 22px;
+        text-align: center;
+        background-color: #8ec21f; }
+      section .epark-content tr td input[type="radio"]:checked + label.radio-green:before {
+        background-color: #8ec21f; }
+      section .epark-content tr:nth-child(2) input[type="text"] {
+        margin: 5px 0 22px 30px;
+        padding-left: 5px;
+        width: 526px; }
+      section .epark-content tr:nth-child(2) span {
+        color: red; }
+      section .epark-content tr:nth-child(3) label {
+        margin-left: 30px; }
+        section .epark-content tr:nth-child(3) label:nth-child(1) ~ input[type="text"] {
+          width: 194px;
+          padding-left: 5px; }
+          section .epark-content tr:nth-child(3) label:nth-child(1) ~ input[type="text"]:not(:nth-of-type(2)) {
+            margin: 12px 16px 0 72px; }
+        section .epark-content tr:nth-child(3) label:nth-of-type(2) ~ input[type="text"] {
+          padding-left: 5px;
+          width: 194px; }
+          section .epark-content tr:nth-child(3) label:nth-of-type(2) ~ input[type="text"]:not(:nth-of-type(2)) {
+            margin: 18px 0px 0 16px; }
+        section .epark-content tr:nth-child(3) label:nth-of-type(3) {
+          margin-top: 28px;
+          margin-bottom: 14px; }
+        section .epark-content tr:nth-child(3) label:nth-of-type(4) {
+          margin-left: 58px; }
+        section .epark-content tr:nth-child(3) label:nth-of-type(5) {
+          margin-left: 64px; }
+      section .epark-content tr:nth-of-type(4) td {
+        padding-top: 16px;
+        padding-bottom: 16px; }
+        section .epark-content tr:nth-of-type(4) td div.input-group {
+          width: 608px; }
+      section .epark-content tr:nth-of-type(4) span.glyphicon-calendar:before {
+        content: url("../image/calendar.png"); }
+      section .epark-content tr:nth-of-type(4) input[type="text"] {
+        margin-left: 28px;
+        width: 528px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px; }
+        section .epark-content tr:nth-of-type(4) input[type="text"] + span {
+          background-color: #f3efe9;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          border-radius: 5px;
+          border: 2px solid #dfd2c3; }
+      section .epark-content tr:nth-of-type(5) label {
+        margin-left: 60px; }
+        section .epark-content tr:nth-of-type(5) label:nth-of-type(2) {
+          margin-left: 80px; }
+      section .epark-content tr:nth-of-type(5) td:first-child {
+        padding-top: 20px;
+        padding-bottom: 20px; }
+      section .epark-content tr:nth-of-type(6) td {
+        padding-top: 20px;
+        padding-bottom: 20px; }
+      section .epark-content tr:nth-of-type(6) label {
+        margin-left: 60px; }
+        section .epark-content tr:nth-of-type(6) label:nth-of-type(2) {
+          margin-left: 80px; }
+        section .epark-content tr:nth-of-type(6) label:nth-of-type(3) {
+          margin-left: 70px; }
+      section .epark-content tr:nth-of-type(7) td:first-child {
+        padding-top: 22px;
+        padding-bottom: 40px; }
+      section .epark-content tr:nth-of-type(7) input[type="text"] {
+        width: 80px; }
+        section .epark-content tr:nth-of-type(7) input[type="text"]:first-child {
+          margin-left: 30px; }
+          section .epark-content tr:nth-of-type(7) input[type="text"]:first-child + span {
+            margin-left: 8px;
+            margin-right: 8px;
+            font-weight: bold; }
+      section .epark-content tr:nth-of-type(7) button.btn-search-address {
+        margin-left: 38px;
+        background-color: #f3efe9;
+        border: 2px solid #e4dbce;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
+        padding: 8px 35px;
+        color: #846445;
+        font-size: 12px;
+        line-height: 12px; }
+      section .epark-content tr:nth-of-type(7) span {
+        font-size: 11px; }
+      section .epark-content tr:nth-of-type(7) span.exemple {
+        display: inline-block;
+        padding-top: 8px;
+        margin-left: 30px;
+        margin-right: 10px; }
+      section .epark-content tr:nth-of-type(7) span:nth-of-type(3) {
+        margin-right: 20px; }
+      section .epark-content tr:nth-of-type(8) td:first-child {
+        padding-top: 22px;
+        padding-bottom: 22px; }
+      section .epark-content tr:nth-of-type(8) select {
+        width: 530px;
+        height: 35px;
+        margin: 10px 0 10px 28px;
+        border: 1px solid #c2ada3;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
+        background-color: #fff;
+        padding-left: 5px;
+        -webkit-appearance: none; }
+      section .epark-content tr .input-type {
+        margin: 12px 0 12px 28px;
+        width: 530px;
+        padding-left: 10px; }
+      section .epark-content tr:nth-last-of-type(3) input[type="text"] {
+        margin: 10px 0 10px 28px; }
+      section .epark-content tr:nth-last-of-type(3) p {
+        margin-left: 28px;
+        margin-bottom: 12px; }
+      section .epark-content tr:nth-last-of-type(3) span:nth-of-type(1) {
+        margin-left: 6px; }
+      section .epark-content tr:nth-last-of-type(3) span:nth-of-type(2) {
+        margin-left: 22px;
+        margin-right: 6px; }
+      section .epark-content tr:nth-last-of-type(2) td {
+        padding-top: 24px; }
+      section .epark-content tr:nth-last-of-type(2) td:last-child {
+        padding-left: 58px; }
+      section .epark-content tr:nth-last-of-type(2) .left-checkbox, section .epark-content tr:nth-last-of-type(2) .right-checkbox {
+        width: 36%;
+        float: left; }
+        section .epark-content tr:nth-last-of-type(2) .left-checkbox label, section .epark-content tr:nth-last-of-type(2) .right-checkbox label {
+          display: block;
+          margin-bottom: 16px;
+          color: #333;
+          font-size: 13px; }
+          section .epark-content tr:nth-last-of-type(2) .left-checkbox label:last-child, section .epark-content tr:nth-last-of-type(2) .right-checkbox label:last-child {
+            margin-bottom: 22px; }
+      section .epark-content tr:nth-last-of-type(2) p {
+        margin-left: -28px; }
+      section .epark-content tr:nth-last-of-type(1) td {
+        padding-top: 18px;
+        padding-bottom: 18px; }
+      section .epark-content tr:nth-last-of-type(1) label {
+        margin-left: 58px; }
+
+div.alert-bottom {
   background-color: #ffe9ea;
-  height: 30px;
-  margin-top: 20px;
-  padding-top: 5px;
-  padding-left: 15px;
-  color: #cb141a;
-  font-weight: bold; }
+  margin-top: 22px; }
+  div.alert-bottom p {
+    color: #cb141a;
+    font-weight: bold;
+    padding: 5px 16px; }
 
-/*@media screen and (max-width: 1024px)
- .toppage{
+div.spark-btn-update {
+  width: 583px;
+  margin: 0 auto;
+  margin-top: 36px;
+  margin-bottom: 58px; }
+  div.spark-btn-update button {
+    width: 280px;
+    height: 42px;
+    font-weight: bold;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
+    div.spark-btn-update button:first-child {
+      background-color: #f3efe9;
+      border: 2px solid #e4dbce;
+      color: #936945;
+      margin-right: 17px; }
+    div.spark-btn-update button:last-child {
+      background-color: #e0f2b6;
+      border: 2px solid #b4d46e;
+      color: #637c30; }
+
+/*@media screen and (max-width: 1024px){
+	.toppage {
     right: 0;
-}	
-*/
-.toppage {
-  background: url(../images/toppage.png) center center no-repeat;
-  width: 60px;
-  height: 60px;
-  background-size: 60px;
-  display: inline-block;
-  position: absolute;
-  top: -32px;
-  cursor: pointer; }
-
+}*/
 span {
   border: 0;
   font-family: notosans,sans-serif;
@@ -221,21 +463,45 @@ footer {
   min-height: 92px;
   width: 100%;
   background-color: #f3efe9;
-  float: left; }
+  float: left;
+  /*p,{
+  	color: #936945;
+  	text-align: center;
+  }
+  */ }
   footer p {
     font-size: 10px;
     margin-bottom: 10px; }
-  footer p, footer ul, footer li {
+  footer ul {
+    text-align: center; }
+  footer a {
+    color: #936945; }
+  footer p {
     text-align: center; }
   footer .epark-global-footer-group-title {
     font-weight: bold;
-    border-bottom: 2px solid #936945;
     width: 1200px;
     /*	padding-left:  10px;*/
     margin-top: 20px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    border-bottom: 2px solid #936945;
+    padding-left: 50px; }
   footer .pc-f-block {
     margin-top: 25px;
     margin-bottom: 25px; }
+  footer .container-1 {
+    background: url(../img/Pagetop.png) center center no-repeat;
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+    display: inline-block;
+    position: absolute;
+    top: -52px;
+    right: -40px;
+    cursor: pointer;
+    float: right;
+    margin-right: 80px; }
+  footer #epark-global-footer-box {
+    position: relative; }
 
 /*# sourceMappingURL=style.css.map */
